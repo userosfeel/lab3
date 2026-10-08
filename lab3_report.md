@@ -99,7 +99,7 @@ ls -l /usr/bin/passwd
 * **Шаг 2.2.3.3 (Sticky bit):** Защита файлов от удаления чужими пользователями. Проверил его работу в стандартной системной папке `/tmp`.
 ```bash
 sudo chmod g+s /shared/directory
-ls -ld /tmp
+sudo chmod +t /tmp
 ```
 ![Проверка Sticky bit на папке /tmp](2.2/2.2.3.3.png)
 
